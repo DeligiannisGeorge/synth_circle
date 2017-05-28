@@ -1,0 +1,40 @@
+html, body {
+  padding:0;
+  margin:0;
+  background: #dedada;
+  background: -webkit-linear-gradient(-90deg, #dedada, grey);
+}
+header{
+ height: 500px;
+ background-color:#d729b1;
+ margin: 0 auto;
+ position:relative;
+}
+
+.kiklos {
+  width: 200px;
+  height: 200px;
+  background-color:#010860;
+  border-radius:100%;
+  margin:0 auto;
+  position: absolute;
+  top: 350px;
+  animation: rotate 15s ease infinite;
+}
+
+@keyframes rotate {
+  0%  {left:calc(50% - 100px); transform:rotate(0);}
+  20% {left:calc(100% - 200px); transform:rotate(180deg);}
+  60% {left:0px; transform:rotate(-180deg);}
+  100% {left:calc(50% - 100px); transform:rotate(0);}
+}
+
+article {
+  width:10px;
+  height:10px;
+  background-color:#ff728b;
+  border-radius:100%;
+  margin:0 auto;
+  position: relative;
+  top: 5px;
+}
